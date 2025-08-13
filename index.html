@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Aotearoa Native Database - Protecting and promoting New Zealand's native biodiversity through education and conservation awareness">
+    <meta name="keywords" content="New Zealand, native species, conservation, biodiversity, Māori, indigenous, flora, fauna">
+    <meta property="og:title" content="Aotearoa Native Database">
+    <meta property="og:description" content="Discover and learn about New Zealand's unique native species">
+    <meta property="og:type" content="website">
+    
+    <title>Aotearoa Native Database - Protecting New Zealand's Native Biodiversity</title>
+    <link rel="stylesheet" href="styles.css">
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "Aotearoa Native Database",
+      "description": "Educational resource for New Zealand's native species and conservation",
+      "url": "https://example.com"
+    }
+    </script>
+</head>
+<body>
+    <!-- Skip Navigation Link for Accessibility -->
+    <a href="#main-content" class="skip-nav">Skip to main content</a>
+    
+    <!-- Header -->
+    <header class="header">
+        <div class="header__container">
+            <h1 class="header__title">
+                <a href="#home" class="header__title-link">Aotearoa Native Database</a>
+            </h1>
+            
+            <!-- Mobile Menu Toggle -->
+            <input type="checkbox" id="mobile-menu-toggle" class="mobile-menu__toggle" aria-label="Toggle mobile menu">
+            <label for="mobile-menu-toggle" class="mobile-menu__button">
+                <span class="mobile-menu__icon"></span>
+                <span class="mobile-menu__icon"></span>
+                <span class="mobile-menu__icon"></span>
+            </label>
+            
+            <!-- Navigation -->
+            <nav class="nav" role="navigation" aria-label="Main navigation">
+                <ul class="nav__list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link nav__link--active" data-page="home">Home</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#nature" class="nav__link" data-page="nature">Nature</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#about" class="nav__link" data-page="about">About</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact" class="nav__link" data-page="contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <!-- Search Bar -->
+            <div class="search" role="search">
+                <input type="search" class="search__input" placeholder="Search native species..." aria-label="Search native species">
+                <button class="search__button" type="submit" aria-label="Search">
+                    <span class="search__icon">🔍</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main id="main-content" class="main">
+        
+        <!-- Home Page -->
+        <section id="home" class="page page--active" aria-labelledby="home-title">
+            <!-- Hero Section -->
+            <section class="hero">
+                <div class="hero__container">
+                    <div class="hero__content">
+                        <h2 id="home-title" class="hero__title">Protecting Aotearoa's Natural Heritage</h2>
+                        <p class="hero__subtitle">Discover, learn about, and help conserve New Zealand's unique native species</p>
+                        <div class="hero__actions">
+                            <a href="#nature" class="btn btn--primary" data-page="nature">Explore Nature</a>
+                            <a href="#about" class="btn btn--secondary" data-page="about">Learn More</a>
+                        </div>
+                    </div>
+                    <div class="hero__image">
+                        <img src="https://images.pexels.com/photos/1662159/pexels-photo-1662159.jpeg?auto=compress&cs=tinysrgb&w=800" 
+                             alt="New Zealand native forest landscape" 
+                             loading="lazy">
+                    </div>
+                </div>
+            </section>
+
+            <!-- Featured Species -->
+            <section class="section">
+                <div class="container">
+                    <h3 class="section__title">Featured Native Species</h3>
+                    <div class="species-grid">
+                        <article class="species-card">
+                            <div class="species-card__image">
+                                <img src="https://images.pexels.com/photos/416978/pexels-photo-416978.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                                     alt="Kiwi bird - New Zealand's national bird" 
+                                     loading="lazy">
+                                <span class="species-card__badge">Endemic Bird</span>
+                            </div>
+                            <div class="species-card__content">
+                                <h4 class="species-card__title">Kiwi / Kīwī</h4>
+                                <p class="species-card__scientific">Apteryx mantelli</p>
+                                <p class="species-card__description">New Zealand's iconic flightless bird, a symbol of the nation's unique biodiversity.</p>
+                                <span class="species-card__status species-card__status--vulnerable">Vulnerable</span>
+                            </div>
+                        </article>
+
+                        <article class="species-card">
+                            <div class="species-card__image">
+                                <img src="https://images.pexels.com/photos/1462408/pexels-photo-1462408.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                                     alt="Kauri tree - ancient native tree" 
+                                     loading="lazy">
+                                <span class="species-card__badge">Native Tree</span>
+                            </div>
+                            <div class="species-card__content">
+                                <h4 class="species-card__title">Kauri</h4>
+                                <p class="species-card__scientific">Agathis australis</p>
+                                <p class="species-card__description">Magnificent ancient trees that can live for over 1,000 years and grow to enormous size.</p>
+                                <span class="species-card__status species-card__status--vulnerable">Vulnerable</span>
+                            </div>
+                        </article>
+
+                        <article class="species-card">
+                            <div class="species-card__image">
+                                <img src="https://images.pexels.com/photos/1076758/pexels-photo-1076758.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                                     alt="Tui bird with distinctive white throat tuft" 
+                                     loading="lazy">
+                                <span class="species-card__badge">Native Bird</span>
+                            </div>
+                            <div class="species-card__content">
+                                <h4 class="species-card__title">Tui</h4>
+                                <p class="species-card__scientific">Prosthemadera novaeseelandiae</p>
+                                <p class="species-card__description">Beautiful songbird known for its melodious calls and distinctive white throat tuft.</p>
+                                <span class="species-card__status species-card__status--stable">Stable</span>
+                            </div>
+                        </article>
+
+                        <article class="species-card">
+                            <div class="species-card__image">
+                                <img src="https://images.pexels.com/photos/1591447/pexels-photo-1591447.jpeg?auto=compress&cs=tinysrgb&w=400" 
+                                     alt="Silver fern fronds unfurling" 
+                                     loading="lazy">
+                                <span class="species-card__badge">Native Plant</span>
+                            </div>
+                            <div class="species-card__content">
+                                <h4 class="species-card__title">Silver Fern / Kaponga</h4>
+                                <p class="species-card__scientific">Cyathea dealbata</p>
+                                <p class="species-card__description">National symbol with distinctive silver undersides, representing strength and nature.</p>
+                                <span class="species-card__status species-card__status--stable">Stable</span>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Threats Awareness -->
+            <section class="section section--warning">
+                <div class="container">
+                    <h3 class="section__title">Threats to Native Species</h3>
+                    <div class="threats">
+                        <div class="threat">
+                            <h4 class="threat__title">Invasive Species</h4>
+                            <p class="threat__description">Non-native plants and animals disrupting ecosystems</p>
+                        </div>
+                        <div class="threat">
+                            <h4 class="threat__title">Habitat Loss</h4>
+                            <p class="threat__description">Urban development and agriculture reducing natural habitats</p>
+                        </div>
+                        <div class="threat">
+                            <h4 class="threat__title">Climate Change</h4>
+                            <p class="threat__description">Changing weather patterns affecting species distribution</p>
+                        </div>
+                    </div>
+                    <div class="cta">
+                        <p class="cta__text">Learn how you can help protect New Zealand's native species</p>
+                        <a href="#about" class="btn btn--primary" data-page="about">Get Involved</a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Quick Navigation -->
+            <section class="section">
+                <div class="container">
+                    <h3 class="section__title">Explore by Category</h3>
+                    <div class="category-nav">
+                        <a href="#nature" class="category-nav__item" data-page="nature">
+                            <span class="category-nav__icon">🌳</span>
+                            <span class="category-nav__title">Native Trees</span>
+                        </a>
+                        <a href="#nature" class="category-nav__item" data-page="nature">
+                            <span class="category-nav__icon">🦅</span>
+                            <span class="category-nav__title">Native Birds</span>
+                        </a>
+                        <a href="#nature" class="category-nav__item" data-page="nature">
+                            <span class="category-nav__icon">🌿</span>
+                            <span class="category-nav__title">Native Plants</span>
+                        </a>
+                        <a href="#nature" class="category-nav__item" data-page="nature">
+                            <span class="category-nav__icon">🐋</span>
+                            <span class="category-nav__title">Marine Life</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </section>
+
+        <!-- Nature Page -->
+        <section id="nature" class="page" aria-labelledby="nature-title">
+            <div class="container">
+                <div class="page-header">
+                    <h2 id="nature-title" class="page-header__title">New Zealand's Biodiversity</h2>
+                    <p class="page-header__subtitle">Discover the incredible variety of native species that call Aotearoa home</p>
+                </div>
+
+                <div class="biodiversity-overview">
+                    <p class="biodiversity-overview__text">
+                        New Zealand's isolation for millions of years has created a unique ecosystem with many endemic species found nowhere else on Earth. 
+                        From ancient kauri forests to alpine herbs, from flightless birds to marine mammals, our biodiversity is both precious and fragile.
+                    </p>
+                </div>
+
+                <div class="category-grid">
+                    <article class="category-card">
+                        <div class="category-card__image">
+                            <img src="https://images.pexels.com/photos/1462408/pexels-photo-1462408.jpeg?auto=compress&cs=tinysrgb&w=500" 
+                                 alt="Native trees including Kauri, Rimu, and Totara" 
+                                 loading="lazy">
+                        </div>
+                        <div class="category-card__content">
+                            <h3 class="category-card__title">Native Trees</h3>
+                            <p class="category-card__description">Ancient forests of Kauri, Rimu, and Totara that have stood for centuries</p>
+                            <ul class="category-card__species">
+                                <li>Kauri (Agathis australis)</li>
+                                <li>Rimu (Dacrydium cupressinum)</li>
+                                <li>Totara (Podocarpus totara)</li>
+                            </ul>
+                            <a href="#" class="btn btn--outline">Learn More</a>
+                        </div>
+                    </article>
+
+                    <article class="category-card">
+                        <div class="category-card__image">
+                            <img src="https://images.pexels.com/photos/1591447/pexels-photo-1591447.jpeg?auto=compress&cs=tinysrgb&w=500" 
+                                 alt="Native plants including flax, ferns, and mosses" 
+                                 loading="lazy">
+                        </div>
+                        <div class="category-card__content">
+                            <h3 class="category-card__title">Native Plants</h3>
+                            <p class="category-card__description">From towering tree ferns to delicate mosses, explore our plant diversity</p>
+                            <ul class="category-card__species">
+                                <li>New Zealand Flax (Phormium tenax)</li>
+                                <li>Silver Fern (Cyathea dealbata)</li>
+                                <li>King Fern (Ptisana salicina)</li>
+                            </ul>
+                            <a href="#" class="btn btn--outline">Learn More</a>
+                        </div>
+                    </article>
+
+                    <article class="category-card">
+                        <div class="category-card__image">
+                            <img src="https://images.pexels.com/photos/1076758/pexels-photo-1076758.jpeg?auto=compress&cs=tinysrgb&w=500" 
+                                 alt="Native birds including Kea, Tui, and Fantail" 
+                                 loading="lazy">
+                        </div>
+                        <div class="category-card__content">
+                            <h3 class="category-card__title">Native Birds</h3>
+                            <p class="category-card__description">From the playful Kea to the melodious Tui, discover our feathered friends</p>
+                            <ul class="category-card__species">
+                                <li>Kea (Nestor notabilis)</li>
+                                <li>Tui (Prosthemadera novaeseelandiae)</li>
+                                <li>Fantail (Rhipidura fuliginosa)</li>
+                            </ul>
+                            <a href="#" class="btn btn--outline">Learn More</a>
+                        </div>
+                    </article>
+
+                    <article class="category-card">
+                        <div class="category-card__image">
+                            <img src="https://images.pexels.com/photos/869258/pexels-photo-869258.jpeg?auto=compress&cs=tinysrgb&w=500" 
+                                 alt="Marine life including dolphins and seals" 
+                                 loading="lazy">
+                        </div>
+                        <div class="category-card__content">
+                            <h3 class="category-card__title">Native Marine Life</h3>
+                            <p class="category-card__description">Explore the rich marine ecosystems surrounding New Zealand</p>
+                            <ul class="category-card__species">
+                                <li>Hector's Dolphin (Cephalorhynchus hectori)</li>
+                                <li>New Zealand Fur Seal (Arctocephalus forsteri)</li>
+                                <li>Blue Whale (Balaenoptera musculus)</li>
+                            </ul>
+                            <a href="#" class="btn btn--outline">Learn More</a>
+                        </div>
+                    </article>
+
+                    <article class="category-card">
+                        <div class="category-card__image">
+                            <img src="https://images.pexels.com/photos/1402856/pexels-photo-1402856.jpeg?auto=compress&cs=tinysrgb&w=500" 
+                                 alt="Native insects including Weta and native bees" 
+                                 loading="lazy">
+                        </div>
+                        <div class="category-card__content">
+                            <h3 class="category-card__title">Native Insects</h3>
+                            <p class="category-card__description">Discover the fascinating world of New Zealand's unique invertebrates</p>
+                            <ul class="category-card__species">
+                                <li>Giant Weta (Deinacrida heteracantha)</li>
+                                <li>Native Bee (Leioproctus spp.)</li>
+                                <li>Giraffe Weevil (Lasiorhynchus barbicornis)</li>
+                            </ul>
+                            <a href="#" class="btn btn--outline">Learn More</a>
+                        </div>
+                    </article>
+
+                    <article class="category-card">
+                        <div class="category-card__image">
+                            <img src="https://images.pexels.com/photos/1076758/pexels-photo-1076758.jpeg?auto=compress&cs=tinysrgb&w=500" 
+                                 alt="Endemic flowers including Kowhai and Pohutukawa" 
+                                 loading="lazy">
+                        </div>
+                        <div class="category-card__content">
+                            <h3 class="category-card__title">Endemic Flowers</h3>
+                            <p class="category-card__description">Beautiful blooms that paint New Zealand's landscape with color</p>
+                            <ul class="category-card__species">
+                                <li>Kowhai (Sophora species)</li>
+                                <li>Pohutukawa (Metrosideros excelsa)</li>
+                                <li>Mount Cook Lily (Ranunculus lyallii)</li>
+                            </ul>
+                            <a href="#" class="btn btn--outline">Learn More</a>
+                        </div>
+                    </article>
+
+                    <article class="category-card category-card--alert">
+                        <div class="category-card__image">
+                            <img src="https://images.pexels.com/photos/416978/pexels-photo-416978.jpeg?auto=compress&cs=tinysrgb&w=500" 
+                                 alt="Threatened species requiring conservation attention" 
+                                 loading="lazy">
+                        </div>
+                        <div class="category-card__content">
+                            <h3 class="category-card__title">Threatened Species</h3>
+                            <p class="category-card__description">Species that need our immediate attention and conservation efforts</p>
+                            <ul class="category-card__species">
+                                <li>Maui's Dolphin (Critically Endangered)</li>
+                                <li>Kakapo (Critically Endangered)</li>
+                                <li>Black Robin (Vulnerable)</li>
+                            </ul>
+                            <a href="#" class="btn btn--warning">Urgent Action Needed</a>
+                        </div>
+                    </article>
+
+                    <article class="category-card category-card--success">
+                        <div class="category-card__image">
+                            <img src="https://images.pexels.com/photos/1076758/pexels-photo-1076758.jpeg?auto=compress&cs=tinysrgb&w=500" 
+                                 alt="Conservation success stories" 
+                                 loading="lazy">
+                        </div>
+                        <div class="category-card__content">
+                            <h3 class="category-card__title">Conservation Success Stories</h3>
+                            <p class="category-card__description">Inspiring examples of species recovery through dedicated conservation</p>
+                            <ul class="category-card__species">
+                                <li>Black Robin Recovery</li>
+                                <li>Takahe Conservation</li>
+                                <li>Kokako Population Growth</li>
+                            </ul>
+                            <a href="#" class="btn btn--success">Read Success Stories</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Page -->
+        <section id="about" class="page" aria-labelledby="about-title">
+            <div class="container">
+                <div class="page-header">
+                    <h2 id="about-title" class="page-header__title">About Aotearoa Native Database</h2>
+                    <p class="page-header__subtitle">Our mission to protect and promote New Zealand's native biodiversity</p>
+                </div>
+
+                <div class="about-content">
+                    <section class="about-section">
+                        <h3 class="about-section__title">Our Mission</h3>
+                        <p class="about-section__text">
+                            The Aotearoa Native Database is dedicated to protecting and promoting New Zealand's unique native biodiversity through education, 
+                            awareness, and community engagement. We believe that knowledge is the first step toward conservation, and by connecting people 
+                            with our native species, we can inspire action to protect them for future generations.
+                        </p>
+                    </section>
+
+                    <section class="about-section">
+                        <h3 class="about-section__title">Our Goals</h3>
+                        <ul class="about-list">
+                            <li class="about-list__item">Educate New Zealanders and visitors about our native species</li>
+                            <li class="about-list__item">Raise awareness about conservation challenges and successes</li>
+                            <li class="about-list__item">Support community-led conservation initiatives</li>
+                            <li class="about-list__item">Promote sustainable practices that protect native habitats</li>
+                            <li class="about-list__item">Honor Māori traditional knowledge and guardianship (kaitiakitanga)</li>
+                        </ul>
+                    </section>
+
+                    <section class="about-section">
+                        <h3 class="about-section__title">Educational Mission</h3>
+                        <p class="about-section__text">
+                            Education is at the heart of everything we do. Our platform provides accessible, accurate information about New Zealand's 
+                            native species, their habitats, threats they face, and conservation efforts underway. We aim to make this knowledge 
+                            available to everyone, from school children to researchers, tourists to lifelong residents.
+                        </p>
+                    </section>
+
+                    <section class="about-section">
+                        <h3 class="about-section__title">Partnerships & Acknowledgments</h3>
+                        <div class="partnerships">
+                            <div class="partnership">
+                                <h4 class="partnership__title">Iwi and Māori Communities</h4>
+                                <p class="partnership__text">
+                                    We acknowledge the traditional guardianship (kaitiakitanga) of tangata whenua and work in partnership 
+                                    with Māori communities to respect and incorporate traditional ecological knowledge.
+                                </p>
+                            </div>
+                            <div class="partnership">
+                                <h4 class="partnership__title">Conservation Organizations</h4>
+                                <p class="partnership__text">
+                                    Collaborating with DOC, Forest & Bird, WWF New Zealand, and other conservation groups to ensure 
+                                    accurate information and effective conservation messaging.
+                                </p>
+                            </div>
+                            <div class="partnership">
+                                <h4 class="partnership__title">Research Institutions</h4>
+                                <p class="partnership__text">
+                                    Working with universities and research institutes to provide the latest scientific information 
+                                    about New Zealand's biodiversity.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+
+                    <section class="about-section">
+                        <h3 class="about-section__title">How You Can Help</h3>
+                        <div class="help-actions">
+                            <div class="help-action">
+                                <h4 class="help-action__title">Get Involved</h4>
+                                <p class="help-action__text">Join local conservation groups, participate in citizen science projects, or volunteer for species monitoring programs.</p>
+                            </div>
+                            <div class="help-action">
+                                <h4 class="help-action__title">Support Conservation</h4>
+                                <p class="help-action__text">Donate to conservation organizations or adopt a threatened species through various conservation programs.</p>
+                            </div>
+                            <div class="help-action">
+                                <h4 class="help-action__title">Spread Awareness</h4>
+                                <p class="help-action__text">Share information about native species with friends and family, and help others appreciate our natural heritage.</p>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Page -->
+        <section id="contact" class="page" aria-labelledby="contact-title">
+            <div class="container">
+                <div class="page-header">
+                    <h2 id="contact-title" class="page-header__title">Contact Us</h2>
+                    <p class="page-header__subtitle">Get in touch, request resources, or report a native species sighting</p>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-form-section">
+                        <h3 class="contact-section__title">Send us a Message</h3>
+                        <form class="contact-form" action="#" method="post">
+                            <div class="form-group">
+                                <label for="contact-name" class="form-label">Your Name *</label>
+                                <input type="text" id="contact-name" name="name" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-email" class="form-label">Email Address *</label>
+                                <input type="email" id="contact-email" name="email" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-subject" class="form-label">Subject</label>
+                                <select id="contact-subject" name="subject" class="form-select">
+                                    <option value="">Select a topic</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="education">Educational Resources</option>
+                                    <option value="sighting">Species Sighting Report</option>
+                                    <option value="partnership">Partnership Opportunity</option>
+                                    <option value="correction">Information Correction</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="contact-message" class="form-label">Message *</label>
+                                <textarea id="contact-message" name="message" class="form-textarea" rows="6" required 
+                                          placeholder="Tell us about your inquiry, resource request, or species sighting..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn--primary">Send Message</button>
+                        </form>
+                    </div>
+
+                    <div class="contact-info-section">
+                        <div class="contact-info">
+                            <h3 class="contact-section__title">Educational Resources</h3>
+                            <p class="contact-info__text">
+                                Looking for educational materials for your school or community group? 
+                                We can provide resources including fact sheets, activity guides, and presentation materials.
+                            </p>
+                        </div>
+
+                        <div class="contact-info">
+                            <h3 class="contact-section__title">Report a Sighting</h3>
+                            <p class="contact-info__text">
+                                Help us track native species populations! Report your sightings of native birds, plants, 
+                                or marine life. Include location, date, photos if possible, and any notable behaviors.
+                            </p>
+                        </div>
+
+                        <div class="contact-info">
+                            <h3 class="contact-section__title">Connect With Us</h3>
+                            <div class="social-links">
+                                <a href="#" class="social-link" aria-label="Follow us on Facebook">📘 Facebook</a>
+                                <a href="#" class="social-link" aria-label="Follow us on Instagram">📷 Instagram</a>
+                                <a href="#" class="social-link" aria-label="Follow us on Twitter">🐦 Twitter</a>
+                                <a href="#" class="social-link" aria-label="Subscribe to our newsletter">📧 Newsletter</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-info">
+                            <h3 class="contact-section__title">Office Information</h3>
+                            <div class="address">
+                                <p class="address__line">Aotearoa Native Database</p>
+                                <p class="address__line">Conservation Education Centre</p>
+                                <p class="address__line">123 Native Species Way</p>
+                                <p class="address__line">Wellington, New Zealand</p>
+                                <p class="address__line">Phone: +64 4 123 4567</p>
+                                <p class="address__line">Email: info@aotearoanative.nz</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer__container">
+            <div class="footer__content">
+                <div class="footer__section">
+                    <h4 class="footer__title">Quick Links</h4>
+                    <ul class="footer__links">
+                        <li><a href="#home" class="footer__link" data-page="home">Home</a></li>
+                        <li><a href="#nature" class="footer__link" data-page="nature">Nature Categories</a></li>
+                        <li><a href="#about" class="footer__link" data-page="about">About Us</a></li>
+                        <li><a href="#contact" class="footer__link" data-page="contact">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h4 class="footer__title">Conservation</h4>
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link">Threatened Species</a></li>
+                        <li><a href="#" class="footer__link">Success Stories</a></li>
+                        <li><a href="#" class="footer__link">How to Help</a></li>
+                        <li><a href="#" class="footer__link">Donate</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h4 class="footer__title">Resources</h4>
+                    <ul class="footer__links">
+                        <li><a href="#" class="footer__link">Educational Materials</a></li>
+                        <li><a href="#" class="footer__link">Species Guides</a></li>
+                        <li><a href="#" class="footer__link">Research Papers</a></li>
+                        <li><a href="#" class="footer__link">Photo Gallery</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer__section">
+                    <h4 class="footer__title">Contact Information</h4>
+                    <div class="footer__contact">
+                        <p>Conservation Education Centre</p>
+                        <p>Wellington, New Zealand</p>
+                        <p>Phone: +64 4 123 4567</p>
+                        <p>Email: info@aotearoanative.nz</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <div class="footer__copyright">
+                    <p>&copy; 2025 Aotearoa Native Database. All rights reserved.</p>
+                    <p>Proudly supporting New Zealand's native biodiversity conservation.</p>
+                </div>
+                <div class="footer__acknowledgment">
+                    <p>We acknowledge the traditional guardians of Aotearoa and their ongoing connection to the land and sea.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Simple CSS-based navigation script -->
+    <style>
+        /* Navigation functionality */
+        .page { display: none; }
+        .page--active { display: block; }
+        
+        /* Show specific page based on hash */
+        #home:target, #nature:target, #about:target, #contact:target { display: block; }
+        #home:target ~ * .page:not(#home),
+        #nature:target ~ * .page:not(#nature),
+        #about:target ~ * .page:not(#about),
+        #contact:target ~ * .page:not(#contact) { display: none; }
+        
+        /* Default show home if no target */
+        .page:first-of-type { display: block; }
+        :target ~ * .page:first-of-type { display: none; }
+    </style>
+</body>
+</html>
