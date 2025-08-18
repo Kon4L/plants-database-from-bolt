@@ -1,5 +1,5 @@
 /* Import Google Fonts */
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&family=Open+Sans:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+NSW+ACT+Cursive:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 /* ========================================
    1. CSS Variables & Custom Properties
@@ -29,7 +29,7 @@
   --text-light: #ffffff;
   
   /* Font Families */
-  --font-primary: 'Merriweather', serif;
+  /* --font-primary: 'Merriweather', serif; */
   --font-secondary: 'Open Sans', sans-serif;
   
   /* Font Scales */
@@ -82,11 +82,11 @@ html {
 }
 
 body {
-  font-family: var(--font-secondary);
+  font-family: "Inter", sans-serif;
   font-size: var(--font-size-base);
   line-height: 1.6;
   color: var(--text-primary);
-  background-color: var(--cream-base);
+  background-color: #87ceeb;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
@@ -252,7 +252,7 @@ p {
 }
 
 .nav__link:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgb(255, 0, 0);
   color: var(--nz-green-light);
 }
 
